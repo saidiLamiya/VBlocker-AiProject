@@ -1,0 +1,33 @@
+{
+    "name": "VBlocker",
+    "manifest_version": 2,
+    "description": "Saving you from the internet!",
+    "version": "2.0",
+    "icons": {
+        "128": "extension-de-fichier (4).png",
+        "16": "extension-de-fichier.png",
+        "24": "extension-de-fichier (1).png",
+        "32": "extension-de-fichier (2).png",
+        "64": "extension-de-fichier (3).png"
+
+     },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["jquery.js", "spoiler_filter.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "browser_action": {
+      "default_icon": "extension-de-fichier (4).png",
+      "default_popup": "popup.html",
+      "default_title": "VBlocker"
+    },
+    "permissions": [
+      "tabs",
+      "storage",
+      "activeTab",
+      "http://*/",
+      "https://*/"
+    ]
+  }

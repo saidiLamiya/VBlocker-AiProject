@@ -1,0 +1,33 @@
+ body {
+
+                min-width: 420px;
+                overflow-x: scroll;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                text-align: left;
+                height: 300px;
+                color:rgb(255, 255, 255,0.8);
+            }
+h3{
+  color:#b190bf;
+  text-align: center;
+  font-size: 25px;
+}
+h4{
+  color:#b190bf;
+  font-size: 18px;
+}
+
+/*check out overflow scroll for scroll*/
+
+html{
+  background-color:#212512;
+  height: 320px;
+}
+
+.column{
+  width:200px;
+  float:left;
+}
+/*
+
